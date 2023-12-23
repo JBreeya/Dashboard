@@ -1,0 +1,246 @@
+body {
+    margin: 10px;
+    padding: 100px 15px 10px; 
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #4a4a4a;
+}
+
+body .contain {
+  margin: 0px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; 
+    transition: margin-left 0.5s;
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.082);
+}
+
+
+  .span{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo img {
+    max-height: 40px;
+    margin: 20px;
+  }
+
+  .restaurant-name {
+    margin-left: 10px;
+    color: #083050;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .year-label {
+    color: #000000;
+    font-size: 16px;
+  }
+
+  .main-content {
+    transition: margin-left 0.5s;
+    padding: 16px;
+    margin-left: 0; 
+  }
+
+  .main-content.shifted {
+    margin-left: 250px;
+  }
+
+  .container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .small-card {
+    height: 100px;
+  }
+
+  .chart-container {
+    height: 50px; 
+  }
+
+  .row {
+    margin-bottom: 0;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100;
+  }
+
+  .card-text {
+    margin-bottom: 0; 
+  }
+
+  .equal-height {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  #sidebar {
+    width: 0; 
+    overflow: hidden;
+    transition: width 0.3s ease; 
+  }
+
+  #sidebar.open {
+    width: 250px; 
+  }
+
+  #main-content {
+    transition: margin-left 0.3s ease;
+  }
+
+  body.sidebar-open #main-content {
+    margin-left: 250px;
+  }
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #e7dfdf21;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: rgb(7, 7, 7);
+    font-family: Arial, sans-serif;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+  }
+
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #464444;
+    display: block;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+
+  .sidebar a:hover {
+    color: #858181;
+  }
+
+  .sidebar .close-btn {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 30px;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+
+  .sidebar.active {
+    left: 0;
+  }
+
+  .sidebar .close-btn:hover {
+    color: #083050;
+  }
+
+  .sidebar.open {
+    width: 250px;
+  }
+
+  .md-1 svg {
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    font-weight: bold;
+  }
+
+  .btn-toggle {
+    font-size: 18px; 
+    color: #464444;
+    text-decoration: none;
+    transition: 0.3s;
+    display: block;
+    padding: 8px 8px 8px 60px;
+    font-weight: bold; 
+    width: 100%; 
+    text-align: left; 
+    margin-right: 30px;
+  }
+  
+  .btn-toggle:hover {
+    color: #858181;
+  }
+  
+  .btn-toggle-nav a {
+    padding: 8px 8px 8px 60px;
+    font-size: 16px; 
+  }
+
+.dropdown-wrapper {
+  position: absolute;
+  top: 70%;
+  left: 0px;
+  right: 0;
+}
+
+  .footer {
+    background-color: #2c232318;
+    border-radius: 5px;
+    color: #000;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.company-logo img {
+    height: 50px;
+    width: 60px;
+}
+
